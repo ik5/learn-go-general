@@ -16,7 +16,6 @@ func AppPath() (string, error) {
   }
   fname := path.Clean(path.Join(wd, os.Args[0]))
   return path.Dir(fname) + string(os.PathSeparator), nil
-
 }
 
 func main() {
